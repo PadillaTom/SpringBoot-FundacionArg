@@ -8,6 +8,10 @@ spring:
         generate-ddl: true
         show-sql: true
 
+app:
+    server:
+        port: {$PORT}
+
 amazonProperties:
     endpointUrl: https://s3.us-east-1.amazonaws.com
     aws.accessKey: ${ACCESS_KEY:access-key}

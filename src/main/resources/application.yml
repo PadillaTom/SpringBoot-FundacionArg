@@ -8,9 +8,8 @@ spring:
         generate-ddl: true
         show-sql: true
 
-app:
-    server:
-        port: {$PORT:5000}
+server:
+    port: {$PORT:5000}
 
 amazonProperties:
     endpointUrl: https://s3.us-east-1.amazonaws.com

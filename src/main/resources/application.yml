@@ -5,10 +5,8 @@ spring:
         username: ${DB_USER:root}
         password: ${DB_PASS:root}
     jpa:
-        hibernate.ddl-auto: update
         generate-ddl: true
         show-sql: true
-
 
 amazonProperties:
     endpointUrl: https://s3.us-east-1.amazonaws.com
@@ -17,12 +15,10 @@ amazonProperties:
     aws.region: us-east-1
     aws.bucketName: ${BUCKET_NAME:bucket-name}
 
-
 sendgrid:
     sendgrid.apiKey: ${SG_API_KEY:12345}
     sendgrid.sender: ${SG_SENDER:12345}
     welcome-template: ${SG_TEMPLATE_ID:12345}
-
 
 #Swagger Configurations
 springdoc:

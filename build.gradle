@@ -30,7 +30,8 @@ dependencies {
     implementation 'org.mockito:mockito-core:4.1.0'
 
     compileOnly 'org.projectlombok:lombok'
-    runtimeOnly 'org.postgresql:postgresql'
+    runtimeOnly 'mysql:mysql-connector-java'
+//    runtimeOnly 'org.postgresql:postgresql'
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation 'org.springframework.security:spring-security-test'
@@ -38,26 +39,24 @@ dependencies {
     testImplementation('org.junit.jupiter:junit-jupiter')
     testImplementation 'org.assertj:assertj-core:3.21.0'
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
+
     implementation 'io.jsonwebtoken:jjwt:0.9.1'
-
     implementation 'com.amazonaws:aws-java-sdk:1.12.126'
-
     implementation 'org.springdoc:springdoc-openapi-ui:1.5.13'
-
-    implementation 'org.flywaydb:flyway-core'
+//    implementation 'org.flywaydb:flyway-core'
 }
 
-flyway {
-    driver = 'org.postgresql.Driver'
-    user = 'postgres'
-    password = 'postgres'
-    url = 'jdbc:postgresql://localhost:5432/ot111_ong'
-    locations = [
-            'classpath:db/migration'
-    ]
-    schemas = ['public']
-    cleanDisabled = false
-}
+//flyway {
+//    driver = 'org.postgresql.Driver'
+//    user = 'postgres'
+//    password = 'postgres'
+//    url = 'jdbc:postgresql://localhost:5432/ot111_ong'
+//    locations = [
+//            'classpath:db/migration'
+//    ]
+//    schemas = ['public']
+//    cleanDisabled = false
+//}
 
 
 test {

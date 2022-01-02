@@ -1,9 +1,12 @@
 spring:
     datasource:
-        url: jdbc:postgresql://localhost:5432/ot111_ong
-        username: postgres
-        password: postgres
+        driverClassName: com.mysql.jdbc.Driver
+        url: jdbc:mysql://${DB_URL:localhost:8889}/fundacion-arg
+        username: ${DB_USER:root}
+        password: ${DB_PASS:root}
     jpa:
+        hibernate.ddl-auto: update
+        generate-ddl: true
         show-sql: true
 
 

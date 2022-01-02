@@ -9,7 +9,7 @@ spring:
         show-sql: true
 
 server:
-    port: {$PORT:5000}
+    port: {$PORT:8080}
 
 amazonProperties:
     endpointUrl: https://s3.us-east-1.amazonaws.com

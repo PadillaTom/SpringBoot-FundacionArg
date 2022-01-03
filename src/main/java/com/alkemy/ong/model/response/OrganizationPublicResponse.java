@@ -12,6 +12,8 @@ import java.util.List;
 @Builder
 public class OrganizationPublicResponse {
 
+    private Long id;
+
     private String name;
 
     private String image;
@@ -30,6 +32,7 @@ public class OrganizationPublicResponse {
 
     public static OrganizationPublicResponse toDTO(OrganizationEntity entity) {
         return OrganizationPublicResponse.builder()
+                .id(entity.getId())
                 .name(entity.getName())
                 .image(entity.getImage())
                 .phone(entity.getPhone())
@@ -42,6 +45,7 @@ public class OrganizationPublicResponse {
 
     public static OrganizationPublicResponse toDTO(OrganizationEntity entity, List<SlideResponseDTO> slidesDto) {
         return OrganizationPublicResponse.builder()
+                .id(entity.getId())
                 .name(entity.getName())
                 .image(entity.getImage())
                 .phone(entity.getPhone())

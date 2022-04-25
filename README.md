@@ -42,10 +42,6 @@ Password para todos los usuarios administradores y usuarios regulares:
 
 ### OpenApi 3.0 - Swagger Documentation:
 
-#### La descripcion de OpenAPI esta disponible en la ruta:
-
-[http://localhost:8080/api/docs](http://localhost:8080/api/docs)
-
 ### La documentacion de la API con Swagger-UI esta disponible en la ruta:
 
-[http://localhost:8080/api/docs/swagger-ui.html](http://localhost:8080/api/docs/swagger-ui.html)
+[https://alkemy-ot111.herokuapp.com/api/docs/swagger-ui/index.html?configUrl=/api/docs/swagger-config](https://alkemy-ot111.herokuapp.com/api/docs/swagger-ui/index.html?configUrl=/api/docs/swagger-config)
